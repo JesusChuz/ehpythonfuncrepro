@@ -1,0 +1,14 @@
+{
+  "scriptFile": "__init__.py",
+  "bindings": [
+    {
+      "type": "eventHubTrigger",
+      "name": "events",
+      "direction": "in",
+      "connection": "AZURE_EVENT_HUB_CONN_STR",
+      "eventHubName": "%AZURE_EVENT_HUB_NAME%",
+      "cardinality": "many",
+      "consumerGroup": "consumer1"
+    }
+  ]
+}
