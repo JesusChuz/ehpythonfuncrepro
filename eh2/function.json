@@ -9,6 +9,14 @@
       "eventHubName": "%AZURE_EVENT_HUB_NAME%",
       "cardinality": "many",
       "consumerGroup": "consumer2"
+    },
+    {
+      "type": "eventHub",
+      "name": "outputEvent2",
+      "direction": "out",
+      "connection": "OUT_AZURE_EVENT_HUB_CONN_STR",
+      "eventHubName": "%OUT_AZURE_EVENT_HUB_NAME%",
+      "cardinality": "one"
     }
   ]
 }
