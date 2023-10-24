@@ -31,7 +31,7 @@ stages:
         versionSpec: 3.9 # Functions V2 supports Python 3.6 as of today
 
     - bash: |
-        pip install --target="./.python_packages/lib/site-packages" -r ./requirements.txt
+        pip install --target="./.python_packages/lib/site-packages" -r Folder1/requirements.txt
       workingDirectory: $(workingDirectory)
       displayName: 'Install application dependencies'
 
