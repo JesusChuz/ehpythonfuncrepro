@@ -31,14 +31,14 @@ stages:
         versionSpec: 3.9 # Functions V2 supports Python 3.6 as of today
 
     - bash: |
-        pip install --target="./.python_packages/lib/site-packages" -r Folder1/requirements.txt
+        pip install --target="./.python_packages/lib/site-packages" -r ./requirements.txt
       workingDirectory: $(workingDirectory)
       displayName: 'Install application dependencies'
 
     - task: ArchiveFiles@2
       displayName: 'Archive files'
       inputs:
-        rootFolderOrFile: '$(workingDirectory)/Folder1'
+        rootFolderOrFile: '$(workingDirectory)'
         includeRootFolder: false
         archiveType: zip
         archiveFile: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
