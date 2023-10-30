@@ -9,15 +9,8 @@
   },
   "extensions": {
     "eventHubs": {
-        "maxEventBatchSize" : 100,
-        "minEventBatchSize" : 10,
-        "clientRetryOptions":{
-            "mode" : "exponential",
-            "tryTimeout" : "00:01:00",
-            "delay" : "00:00:00.80",
-            "maximumDelay" : "00:01:00",
-            "maximumRetries" : 3
-        }
+        "maxEventBatchSize" : 1,
+        "minEventBatchSize" : 1
     }
   },
   "extensionBundle": {
