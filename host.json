@@ -7,19 +7,6 @@
       }
     }
   },
-  "extensions": {
-        "eventHubs": {
-            "maxEventBatchSize" : 100,
-            "minEventBatchSize" : 20,
-            "clientRetryOptions":{
-                "mode" : "exponential",
-                "tryTimeout" : "00:01:00",
-                "delay" : "00:00:00.80",
-                "maximumDelay" : "00:01:00",
-                "maximumRetries" : 3
-            }
-        }
-    },
   "extensionBundle": {
     "id": "Microsoft.Azure.Functions.ExtensionBundle",
     "version": "[4.0.0, 5.0.0)"
